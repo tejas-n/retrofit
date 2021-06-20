@@ -151,8 +151,8 @@ public final class ScalarsConverterFactoryTest {
                   + "Could not locate RequestBody converter for class java.lang.Object.\n"
                   + "  Tried:\n"
                   + "   * retrofit2.BuiltInConverters\n"
-                  + "   * retrofit2.converter.scalars.ScalarsConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.OptionalConverterFactory\n"
+                  + "   * retrofit2.converter.scalars.ScalarsConverterFactory");
     }
   }
 
@@ -297,8 +297,8 @@ public final class ScalarsConverterFactoryTest {
                   + "Could not locate ResponseBody converter for class java.lang.Object.\n"
                   + "  Tried:\n"
                   + "   * retrofit2.BuiltInConverters\n"
-                  + "   * retrofit2.converter.scalars.ScalarsConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.OptionalConverterFactory\n"
+                  + "   * retrofit2.converter.scalars.ScalarsConverterFactory");
     }
   }
 

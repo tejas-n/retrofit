@@ -447,8 +447,8 @@ public final class Retrofit {
       baseUrl = retrofit.baseUrl;
 
       // Do not add the default BuiltIntConverters and platform-aware converters added by build().
-      for (int i = 1,
-              size = retrofit.converterFactories.size() - platform.defaultConverterFactoriesSize();
+      for (int i = 2,
+              size = retrofit.converterFactories.size();
           i < size;
           i++) {
         converterFactories.add(retrofit.converterFactories.get(i));
@@ -645,8 +645,8 @@ public final class Retrofit {
       // Add the built-in converter factory first. This prevents overriding its behavior but also
       // ensures correct behavior when using converters that consume all types.
       converterFactories.add(new BuiltInConverters());
-      converterFactories.addAll(this.converterFactories);
       converterFactories.addAll(platform.defaultConverterFactories());
+      converterFactories.addAll(this.converterFactories);
 
       return new Retrofit(
           callFactory,

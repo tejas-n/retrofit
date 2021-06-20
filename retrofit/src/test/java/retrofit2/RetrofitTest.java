@@ -1086,8 +1086,8 @@ public final class RetrofitTest {
                   + "Could not locate RequestBody converter for class java.lang.String.\n"
                   + "  Tried:\n"
                   + "   * retrofit2.BuiltInConverters\n"
-                  + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.OptionalConverterFactory\n"
+                  + "   * retrofit2.helpers.NonMatchingConverterFactory");
     }
 
     assertThat(nonMatchingFactory.called).isTrue();
@@ -1118,10 +1118,10 @@ public final class RetrofitTest {
                   + "Could not locate RequestBody converter for class java.lang.String.\n"
                   + "  Skipped:\n"
                   + "   * retrofit2.BuiltInConverters\n"
+                  + "   * retrofit2.OptionalConverterFactory\n"
                   + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
                   + "  Tried:\n"
-                  + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.helpers.NonMatchingConverterFactory");
     }
 
     assertThat(nonMatchingFactory1.called).isFalse();
@@ -1179,8 +1179,8 @@ public final class RetrofitTest {
                   + "Could not locate ResponseBody converter for class java.lang.String.\n"
                   + "  Tried:\n"
                   + "   * retrofit2.BuiltInConverters\n"
-                  + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.OptionalConverterFactory\n"
+                  + "   * retrofit2.helpers.NonMatchingConverterFactory");
     }
 
     assertThat(nonMatchingFactory.called).isTrue();
@@ -1211,10 +1211,10 @@ public final class RetrofitTest {
                   + "Could not locate ResponseBody converter for class java.lang.String.\n"
                   + "  Skipped:\n"
                   + "   * retrofit2.BuiltInConverters\n"
+                  + "   * retrofit2.OptionalConverterFactory\n"
                   + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
                   + "  Tried:\n"
-                  + "   * retrofit2.helpers.NonMatchingConverterFactory\n"
-                  + "   * retrofit2.OptionalConverterFactory");
+                  + "   * retrofit2.helpers.NonMatchingConverterFactory");
     }
 
     assertThat(nonMatchingFactory1.called).isFalse();
